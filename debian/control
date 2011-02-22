@@ -1,23 +1,106 @@
-Source: fastsms
+Source: fastsmsevo
 Section: communication
 Priority: extra
 Maintainer: Davide Aimone <realsportcars@hotmail.com>
-Build-Depends: debhelper (>= 5), libqt4-dev, libqtm-dev
-Standards-Version: 3.7.3
-Homepage: https://garage.maemo.org/projects/fastsms
+Build-Depends: debhelper (>= 5), hildon-input-method-framework-dev, libhildon-im-ui-dev, libgtk2.0-dev, libglib2.0-dev, libgconf2-dev, libosso-dev
+Standards-Version: 3.8.1
+Homepage: http://talk.maemo.org/showthread.php?p=928156
 
-Package: fastsms
-Architecture: armel
+Package: fastsmsevo
+Architecture: any
 Section: user/utilities
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Portrait SMS writer. Input type like T9. 
- FastSMS allows writing SMS using an input style like T9. 
- It comes with italian, english, spanish, french, german and swedish dictionaries, and adding new language is easy.
- It is possible choose between portait, landscape or autorotate orientation.
- More often used words are saved and new words can be inserted.
- Sended SMS are displayed in standard conversation window.
-
-NOTE: load could be very long on first start or when you change language. For example for the bigger dictionary (english-FULL) 5-10 min.
-XB-Maemo-Display-Name: FastSMS
-XSBC-Bugtracker: https://garage.maemo.org/tracker/?atid=5881&group_id=1659&func=browse
-
+Depends: ${shlibs:Depends}, ${misc:Depends}, fastsms(>= 0.5-4)
+Description: Use FastSMS as system virtual keyboard.
+ You need FastSMS-0.5 or above to use it. Please go to homepage for help.
+XB-Maemo-Display-Name: FastSMSEvo
+XSBC-Bugtracker: https://garage.maemo.org/tracker/?atid=6994&group_id=2060&func=browse
+XB-Maemo-Icon-26:
+ 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
+ QmCC

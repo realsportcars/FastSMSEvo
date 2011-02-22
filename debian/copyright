@@ -1,5 +1,5 @@
 This package was debianized by Davide Aimone <realsportcars@hotmail.com> on
-Fri, 04 Jun 2010 21:15:06 +0200.
+Mon, 24 Jan 2011 23:38:46 +0100.
 
 Upstream Author(s):
 
@@ -13,7 +13,7 @@ License:
 
     This package is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation; either version 3 of the License, or
     (at your option) any later version.
 
     This package is distributed in the hope that it will be useful,
@@ -28,10 +28,5 @@ License:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
 
-Some input dictionaries files come from ubuntu.
-
 The Debian packaging is (C) 2010, Davide <realsportcars@hotmail.com> and
 is licensed under the GPL, see above.
-
-
-

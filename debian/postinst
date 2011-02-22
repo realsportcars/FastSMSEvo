@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for fastsms
+# postinst script for fastsmsevo
 #
 # see: dh_installdeb(1)
 
@@ -19,9 +19,9 @@ set -e
 
 
 case "$1" in
-    configure) 
-	chmod -R 777 /opt/fastsms/data
-	chmod a+x /opt/fastsms/fastsms
+    configure)
+	gconftool --type string -s /apps/osso/inputmethod/default-plugins/finger fastsms-input-pad-plugin
+        hildon-im-recache
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

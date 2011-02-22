@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/it/rsc/fastsms/plugin/connection">
+    <interface name="it.rsc.fastsms.plugin.connection">
+        <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="connection"/>
+        <method name="requestCommit">
+            <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="connection_requestCommit"/>
+            <arg type="s" name="gstr" direction="in" />
+        </method>
+    </interface>
+</node>
+

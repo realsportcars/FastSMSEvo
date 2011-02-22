@@ -1,0 +1,23 @@
+Source: fastsms
+Section: communication
+Priority: extra
+Maintainer: Davide Aimone <realsportcars@hotmail.com>
+Build-Depends: debhelper (>= 5), libqt4-dev, libqtm-dev
+Standards-Version: 3.7.3
+Homepage: https://garage.maemo.org/projects/fastsms
+
+Package: fastsms
+Architecture: armel
+Section: user/utilities
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Portrait SMS writer. Input type like T9. 
+ FastSMS allows writing SMS using an input style like T9. 
+ It comes with italian, english, spanish, french, german and swedish dictionaries, and adding new language is easy.
+ It is possible choose between portait, landscape or autorotate orientation.
+ More often used words are saved and new words can be inserted.
+ Sended SMS are displayed in standard conversation window.
+
+NOTE: load could be very long on first start or when you change language. For example for the bigger dictionary (english-FULL) 5-10 min.
+XB-Maemo-Display-Name: FastSMS
+XSBC-Bugtracker: https://garage.maemo.org/tracker/?atid=5881&group_id=1659&func=browse
+
